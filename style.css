@@ -1,0 +1,31 @@
+:root {
+  --mainColor:#eaeaea;
+  --secondaryColor:#fff;
+  --borderColor:#c1c1c1;
+  --mainText:black;
+  --secondaryText:#4b5156;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--mainText);
+}
+
+p {
+  color: var(--secondaryText);
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  border-bottom: var(--borderColor);
+}
+
+.s2 {
+  background-color: var(--secondaryColor);
+  border-bottom: var(--borderColor);
+}
