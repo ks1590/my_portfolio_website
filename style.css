@@ -11,6 +11,9 @@
   --secondaryText:#4b5156;
 
   --themeDotBorder:#24292e;
+
+  --previewBg: rgb(251,249,243, 0.8);
+  --previewShadow:#f0ead6;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
   box-sizing: border-box;
 }
 
-h1,h5 {
+h1,h3,h5 {
   color: var(--mainText);
   font-family: 'Russo One', sans-serif;
 }
@@ -39,6 +42,7 @@ ul {
 }
 
 h1 { font-size: 56px;}
+h3 { font-size: 28px;}
 h5 { font-size: 20px;}
 
 .s1 {
@@ -168,10 +172,6 @@ h5 { font-size: 20px;}
   justify-content: center;
 }
 
-.right-column {
-  grid-area: right-column;
-}
-
 .theme-dot:hover {
   border-width: 5px;
 }
@@ -196,6 +196,57 @@ h5 { font-size: 20px;}
   font-size: 12px;
   font-style: italic;
   text-align: center;
+}
+
+.right-column {
+  grid-area: right-column;
+  display: grid;
+  align-content: center;
+}
+
+#preview-shadow {
+  background-color:var(--previewShadow);
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5px solid #17a2b8;
+  background-color: var(--previewBg);
+  padding: 15px;
+  position: relative;
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.5px solid #17a2b8;
+  background-color: #fff;
+  position: absolute;
+}
+
+#corner-tl {
+  top: -5px;
+  left: -5px;
+}
+
+#corner-tr {
+  top: -5px;
+  right: -5px;
+}
+
+#corner-br {
+  bottom: -5px;
+  right: -5px;
+}
+
+#corner-bl {
+  bottom: -5px;
+  left: -5px;
 }
 
 @media screen and (max-width: 1200px) {
