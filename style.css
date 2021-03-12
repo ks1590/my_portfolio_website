@@ -197,7 +197,7 @@ h6 { font-size: 20px;}
 }
 
 #settings-note {
-  font-size: 12px;
+  font-size: 18px;
   font-style: italic;
   text-align: center;
 }
@@ -212,14 +212,14 @@ h6 { font-size: 20px;}
 
 #preview-shadow {
   background-color:var(--previewShadow);
-  width: 300px;
-  height: 180px;
+  width: 340px;
+  height: 250px;
   padding-left: 30px;
   padding-top: 30px;
 }
 
 #preview {
-  width: 300px;
+  width: 340px;
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
@@ -267,6 +267,16 @@ h6 { font-size: 20px;}
   display: flex;
   justify-content: space-evenly;
   background-color: var(--previewShadow);
+}
+
+.social-links {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+#socail-img {
+  width: 100%;
 }
 
 .post-wrapper {
