@@ -176,9 +176,9 @@ h6 { font-size: 20px;}
   justify-content: center;
 }
 
-.theme-dot:hover {
-  border-width: 5px;
-}
+/* .theme-dot:hover {
+  border-width: 3px;
+} */
 
 #light-mode {
   background-color: #fff;
@@ -190,10 +190,6 @@ h6 { font-size: 20px;}
 
 #green-mode {
   background-color: #78866b;
-}
-
-#purple-mode {
-  background-color: #7E4C74;
 }
 
 #settings-note {
@@ -289,7 +285,6 @@ h6 { font-size: 20px;}
 
 .post {
   border: 1px solid var(--borderColor);
-
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
   box-shadow:  -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -298,7 +293,7 @@ h6 { font-size: 20px;}
 .thumbnail {
   display: block;
   width: 100%;
-  height: 180px;
+  min-height: 100%;
   object-fit: cover;
 }
 
